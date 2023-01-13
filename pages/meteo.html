@@ -5,11 +5,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/meteo.css">
-    <title>Meteo</title>
+    <title>Bande de noobs || Application météo</title>
 </head>
 <body>
     
-    <h1>Page meteo</h1>
+    <div class="container">
+        <h1>Application <span>Météo</span></h1>
+        <!-- loader -->
+        <div class="dot-group">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+          <!-- TOP CARD -->
+        <div class="top">
+            <div class="card-img">
+                <img src="../assets/media/meteo/sun.png" alt="représentation de la météo">
+            </div>
+            <div class="info">
+                <div>
+                    <p class="localisation">Marseille</p>
+                    <p class="degre">25°</p>
+                </div>
+                <p>Ressentie : <span class="felt">28°</span></p>
+            </div>
+
+            <!-- FORM CARD -->
+            <form>
+                <div class="input-group">
+                    <label for="choice-city">Changer de ville</label>
+                    <input type="text" name="choice-city" id="choice-city">
+                </div>
+                <button type="submit" class="btn-city">Valider</button>
+            </form>
+
+            <!-- FORECAST -->
+
+            <div class="forecast">
+                <div class="forecast-btn-group">
+                    <button class="hour-btn">Prévisions température</button>
+                </div>
+                <div class="forecast-hours">
+                    <div class="hours">
+                        <p class="current-hour">16h</p>
+                        <p class="current-temp">32°</p>
+                    </div>
+                    <div class="hours">
+                        <p class="current-hour">16h</p>
+                        <p class="current-temp">32°</p>
+                    </div>
+                    <div class="hours">
+                        <p class="current-hour">16h</p>
+                        <p class="current-temp">32°</p>
+                    </div>
+                    <div class="hours">
+                        <p class="current-hour">16h</p>
+                        <p class="current-temp">32°</p>
+                    </div>
+                    <div class="hours">
+                        <p class="current-hour">16h</p>
+                        <p class="current-temp">32°</p>
+                    </div>
+                    <div class="hours">
+                        <p class="current-hour">16h</p>
+                        <p class="current-temp">32°</p>
+                    </div>
+                    <div class="hours">
+                        <p class="current-hour">16h</p>
+                        <p class="current-temp">32°</p>
+                    </div>
+                </div>
+            </div>
+      
+        </div>
+        
+    </div>
+
+
 
     <script src="../assets/js/meteo.js"></script>
 </body>
