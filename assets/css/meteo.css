@@ -1,0 +1,21 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --colorOne : #264653;
+    --colorTwo : #2A9D8F;
+    --colorThree :#E9C46A;
+    --colorFour : #F4A261;
+    --colorFive : #E76F51;
+}
+
+body{
+    height: 100vh;
+}
+
