@@ -1,0 +1,67 @@
+body{
+    text-align: center;
+}
+
+main{
+    display: flex;
+    width: 100%;
+}
+
+h1{
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+h2{
+    color: #2A908F;
+    font-size: 1.5em;
+}
+
+input{
+    padding: 0.5em;
+    background-color: white;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+label{
+    color: #F4A261;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+button{
+    background-color: #E76F51;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    color: white;
+    font-weight: 600;
+    margin: 1em;
+}
+
+.parts{
+    margin: 1em;
+    padding: 2em;
+    border: black 1px solid;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.parts li {
+    list-style-type: none;
+}
+
+.product{
+    color: black;
+    font-weight: normal;
+}
+
+#comment{
+    width: 60%;
+    height: 50%;
+}
+
+#label-comment{
+    vertical-align: top;
+}
