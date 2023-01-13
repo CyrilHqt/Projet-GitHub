@@ -55,10 +55,15 @@ function generateCitation()
   let element = citations[ random ][ 0 ];
   let autor = citations[ random ][ 1 ];
   let bloc = document.getElementById( 'gen-citation' );
-  let generate = document.createElement( 'div' );
-  let content = document.createTextNode( '"' + element + '"' + ' - ' + autor );
+  let generate = document.createElement( 'blockquote' );
+  let p = document.createElement( 'p' );
+  let figcaption = document.createElement( 'figcaption' );
+  let content = document.createTextNode( '"' + element + '"' );
 
   generate.setAttribute( 'id', 'citation' );
-  generate.appendChild( content );
-  bloc.insertBefore( generate, bloc.firstChild );
+  p.appendChild( content );
+  generate.appendChild( p );
+  figcaption.appendChild( document.createTextNode( ' — ' + autor ) );
+  generate.appendChild( figcaption );
+  bloc.appendChild( generate, bloc.firstChild );
 }
