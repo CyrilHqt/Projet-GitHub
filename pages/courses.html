@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/course.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/nav.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <title>Liste de course</title>
 </head>
 <body>
 <h1>Fait tes courses</h1>
 <span>L'app qui va super marché</span>
 <main>
-    <div>
+    <div class="parts">
         <h2>Liste des produits</h2>
         <div>
-            <label for="produit">Produit :</label>
-            <input type="text" id="addon" name="produit" placeholder="rentré votre produit">
+            <label for="addon">Produit :</label>
+            <input type="text" id="addon" name="addon" placeholder="rentré votre produit">
         </div>
         <div>
             <button type="button" id="add" name="add">Ajouter</button>
@@ -30,12 +31,13 @@
             </ul>
         </div>
     </div>
-    <div>
+    <div class="parts">
         <h2>J'oublie pas de :</h2>
-        <label for="comment">Commentaires : </label>
+        <label for="comment" id="label-comment">Commentaires : </label>
         <textarea id="comment" placeholder="Ecrivez un commentaire pour vos course"></textarea>
     </div>
 </main>
 <script src="../assets/js/course.js"></script>
+<script src="../assets/js/nav.js"></script>
 </body>
 </html>
