@@ -1,0 +1,52 @@
+:root{
+    --bleu-fonce: #264653;
+    --bleu-clair: #2a9d8f;
+    --jaune: #E9C46A;
+    --orange-clair: #F4A261;
+    --orange-fonce: #E76F51;
+}
+body{
+    background-color: var(--orange-fonce);
+}
+
+#gen-citation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gen-citation button{
+    width: 10em;
+}
+
+#citation p{
+    font-style: italic;
+    font-size: 1.4em;
+    margin-bottom: 0.1em;
+}
+
+#citation{
+    background-color: var(--jaune);
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+figcaption{
+    width: max-content;
+    float: right;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.btn-citation{
+    font-weight: bold;
+    height: 2.5em;
+    background-color: var(--orange-clair);
+    color: #fff;
+    border-radius: 5px;
+}
+
+nav{
+    margin-bottom: 1em;
+}

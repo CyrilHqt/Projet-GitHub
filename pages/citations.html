@@ -5,13 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/citation.css">
+    <link rel="stylesheet" href="../assets/css/nav.css">
     <title>Citations</title>
 </head>
 <body>
+    <nav>
+        <ul class="nav-menu">
+            <div class="nav-brands">
+                <li  class="nav-item"><a href="#">Bande de noobs</a></li>
+            </div>
+            <div class="link-nav">
+                <li  class="nav-item"><a href="../index.html">Accueil</a></li>
+                <li class="nav-item"><a href="./meteo.html">Météo</a></li>
+                <li class="nav-item"><a href="./courses.html">Liste de course</a></li>
+                <li class="nav-item"><a href="./imc.html">IMC</a></li>
+                <li class="nav-item"><a href="./citations.html">Citations</a></li>
+            </div>
+        </ul>
+        <div class="btn-toggle" role="button">
+            <img src="../assets/media/nav/menu.svg" alt="menu mobile" id="nav-menu-icon">
+        </div>
+    </nav>
+
     <citation id="gen-citation">
-        <button onclick="generateCitation()">Générer citation</button>
+        <button onclick="generateCitation()" class="btn-citation">Générer citation</button>
     </citation>
 
+    <script src="../assets/js/nav.js"></script>
     <script src="../assets/js/citation.js"></script>
 </body>
 </html>
