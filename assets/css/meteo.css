@@ -31,6 +31,54 @@ body{
     margin: 100px auto;
 }
 
+/************* CONTAINER DOT ****************/
+
+/* we use this code when i create the js logic */
+
+/* .dot-group{
+    margin: 150px auto;
+    width: 200px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.dot-group .dot{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #222;
+    animation: animate-dot 1s linear infinite;
+}
+
+.dot-group .dot:nth-child(1) {
+    animation-delay: 0s
+  }
+  
+.dot-group .dot:nth-child(2) {
+    animation-delay: 0.2s
+  }
+  
+.dot-group .dot:nth-child(3) {
+    animation-delay: 0.4s
+  }
+  
+  @keyframes animate-dot {
+    0% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(8px);
+    }
+  
+    100% {
+      transform: translateY(0);
+    }
+  } */
+
 /************ CONTAINER TOP *************/
 
 h1{
