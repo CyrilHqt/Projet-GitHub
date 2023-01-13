@@ -1,12 +1,16 @@
 body {
     font-family: Tahoma, sans-serif;
     font-size: 1rem;
+    background: rgb(240,248,255);
+    background: radial-gradient(circle, rgba(240,248,255,1) 0%, rgba(255,255,255,1) 100%);
 }
 
 main {
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
+    min-height: 80vh;
+
 }
 
 h1 {
@@ -69,4 +73,15 @@ button {
 
 .red {
     color: red;
+}
+
+#articles
+{
+    margin-top: 10px;
+    padding : 1em;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    background: rgb(148,204,252);
+    border-radius: 10px;
 }
