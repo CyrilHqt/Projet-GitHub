@@ -2,6 +2,7 @@ const input = document.getElementById('addon')
 const add = document.getElementById('add')
 const supr = document.getElementById('delete')
 const out = document.getElementById('out')
+const sort = document.getElementById('sort')
 const list = document.getElementById('list')
 const number = document.getElementById('number')
 let product
@@ -16,6 +17,7 @@ input.addEventListener('change', function (){
 add.addEventListener('click', addToArray)
 supr.addEventListener('click', deleteOfArray)
 out.addEventListener('click', outArray)
+sort.addEventListener('click', sortArray)
 
 
 function affichage (){
@@ -52,5 +54,10 @@ function deleteOfArray(){
 
 function outArray() {
     products = []
+    affichage()
+}
+
+function sortArray(){
+    products = products.sort()
     affichage()
 }
