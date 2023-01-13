@@ -1,0 +1,72 @@
+body {
+    font-family: Tahoma, sans-serif;
+    font-size: 1rem;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 300px;
+    margin: 0 auto;
+    background-color: #2a9d8f;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+label,
+input,
+button {
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input {
+    margin-bottom: 20px;
+    border: none;
+    color: black;
+}
+
+button {
+    background-color: #264653;
+    color: white;
+    padding: 10px;
+    border: 0;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+
+.resultat {
+    display: none;
+}
+
+.blue {
+    color: skyblue;
+}
+
+.green {
+    color: green;
+}
+
+.orange {
+    color: orange;
+}
+
+.red {
+    color: red;
+}
