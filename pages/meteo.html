@@ -5,12 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/meteo.css">
+    <link rel="stylesheet" href="../assets/css/nav.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
     <title>Bande de noobs || Application météo</title>
 </head>
 <body>
+
+    <nav>
+        <ul class="nav-menu">
+            <div class="nav-brands">
+                <li  class="nav-item"><a href="#">Bande de noobs</a></li>
+            </div>
+            <div class="link-nav">
+                <li  class="nav-item"><a href="../index.html">Accueil</a></li>
+                <li class="nav-item"><a href="../pages/meteo.html">Météo</a></li>
+                <li class="nav-item"><a href="../pages/courses.html">Liste de course</a></li>
+                <li class="nav-item"><a href="../pages/imc.html">IMC</a></li>
+                <li class="nav-item"><a href="../pages/citations.html">Citations</a></li>
+            </div>
+        </ul>
+        <div class="btn-toggle" role="button">
+            <img src="../assets/media/nav/menu.svg" alt="menu mobile" id="nav-menu-icon">
+        </div>
+    </nav>
+    
+    <h1>Application <span>Météo</span></h1>
     
     <div class="container">
-        <h1>Application <span>Météo</span></h1>
         <!-- loader -->
         <div class="dot-group">
             <div class="dot"></div>
@@ -80,10 +101,77 @@
       
         </div>
         
+        <h2>Les températures de NY - Londres - Pekin</h2>
+    
+        <div class="container-weather-city">
+    
+            <div class="container-weather-ny">
+                <div class="info-ny">
+                    <div>
+                        <p class="localisation-ny">En attente</p>
+                        <p class="degre-ny">En attente</p>
+                    </div>
+                    <p>Ressentie : <span class="felt-ny">En attente</span></p>
+                </div>
+            </div>
+    
+            <div class="container-weather-london">
+                <div class="info-london">
+                    <div>
+                        <p class="localisation-london">En attente</p>
+                        <p class="degre-london">En attente</p>
+                    </div>
+                    <p>Ressentie : <span class="felt-london">En attente</span></p>
+                </div>
+            </div>
+    
+            <div class="container-weather-pekin">
+                <div class="info-pekin">
+                    <div>
+                        <p class="localisation-pekin">En attente</p>
+                        <p class="degre-pekin">En attente</p>
+                    </div>
+                    <p>Ressentie : <span class="felt-pekin">En attente</span></p>
+                </div>
+            </div>
+    
+        </div>
     </div>
 
 
+    
+    <footer>
+        <div class="footer-flex">
+            <img class="footer-logo" src="../assets/media/footer/cube-blanc.svg" alt="logo">
+        </div>
+        <div class="footer-flex" id="footer-menu">
+            <h3>Menu</h3>
+            <ul>
+                <li>
+                    <a href="">Accueil</a>
+                </li>
+                <li>
+                    <a href="">Météo</a>
+                </li>
+                <li>
+                    <a href="">Liste de course</a>
+                </li>
+                <li>
+                    <a href="">IMC</a>
+                </li>
+                <li>
+                    <a href="">Citations</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-flex">
+            <img class="footer-social" src="../assets/media/footer/facebook.png" alt="">
+            <img class="footer-social" src="../assets/media/footer/twitter.png" alt="">
+            <img class="footer-social" src="../assets/media/footer/instagram.png" alt="">
+        </div>
+    </footer>
 
     <script src="../assets/js/meteo.js"></script>
+    <script src="../assets/js/nav.js"></script>
 </body>
 </html>
