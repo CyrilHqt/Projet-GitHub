@@ -1,0 +1,33 @@
+footer{
+    display: flex;
+    flex: auto;
+    background-color: #264653;
+    padding: 1em;
+    width: 100%;
+}
+.footer-logo {
+    width: 6em;
+}
+.footer-social {
+    width: 2em;
+    margin: 1em;
+}
+
+.footer-flex{
+    flex: auto;
+    text-align: center;
+    margin: auto;
+}
+
+#footer-menu{
+    color: white;
+}
+#footer-menu li {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+#footer-menu a {
+    color: white;
+    text-decoration-color: #E76F51;
+}
