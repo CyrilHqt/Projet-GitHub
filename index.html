@@ -4,12 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <title>Projet GitHub</title>
+    <link rel="stylesheet" href="./assets/css/nav.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Projet Git Hub</title>
 </head>
 <body>
+    <nav>
+        <ul class="nav-menu">
+            <div class="nav-brands">
+                <li  class="nav-item"><a href="#">Bande de noobs</a></li>
+            </div>
+            <div class="link-nav">
+                <li  class="nav-item"><a href="index.html">Accueil</a></li>
+                <li class="nav-item"><a href="./pages/meteo.html">Météo</a></li>
+                <li class="nav-item"><a href="./pages/courses.html">Liste de course</a></li>
+                <li class="nav-item"><a href="./pages/imc.html">IMC</a></li>
+                <li class="nav-item"><a href="./pages/citations.html">Citations</a></li>
+            </div>
+        </ul>
+        <div class="btn-toggle" role="button">
+            <img src="/assets/media/nav/menu.svg" alt="menu mobile" id="nav-menu-icon">
+        </div>
+    </nav>
+    <main>
+        <div class="card-div">
+            <div>
+                <a href="./pages/meteo.html"><img src="assets/media/index/meteo.png" alt="" class="img-card"></a>
+            </div>
+            <div>
+                <a href="./pages/imc.html"><img src="assets/media/index/imc.png" alt="" class="img-card"></a>
+            </div>
+        </div>
+        <div class="card-div">
+            <div>
+                <a href="./pages/courses.html"><img src="assets/media/index/course.png" alt="" class="img-card"></a>
+            </div>
+            <div>
+                <a href="./pages/citations.html"><img src="assets/media/index/citation.png" alt="" class="img-card"></a>
+            </div>
+        </div>
 
-    <script src=""></script>
-    
+    </main>
+    <footer>
+        <div class="footer-flex">
+            <img class="footer-logo" src="./assets/media/footer/cube-blanc.svg" alt="logo">
+        </div>
+        <div class="footer-flex" id="footer-menu">
+            <h3>Menu</h3>
+            <ul>
+                <li>
+                    <a href="./index.html">Accueil</a>
+                </li>
+                <li>
+                    <a href="./pages/meteo.html">Météo</a>
+                </li>
+                <li>
+                    <a href="./pages/courses.html">Liste de course</a>
+                </li>
+                <li>
+                    <a href="./pages/imc.html">IMC</a>
+                </li>
+                <li>
+                    <a href="./pages/citations.html">Citations</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-flex">
+            <img class="footer-social" src="./assets/media/footer/facebook.png" alt="">
+            <img class="footer-social" src="./assets/media/footer/twitter.png" alt="">
+            <img class="footer-social" src="./assets/media/footer/instagram.png" alt="">
+        </div>
+    </footer>
+<script src="/assets/js/nav.js"></script>
 </body>
 </html>
