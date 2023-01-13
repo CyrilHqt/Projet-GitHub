@@ -8,10 +8,10 @@ btn.addEventListener('click', () => {
     toggle = !toggle;
     if(toggle) {
         nav.classList.add('active');
-        img.src = './assets/media/croix.png';
+        img.src = '../assets/media/nav/croix.png';
     }
     else {
         nav.classList.remove('active');
-        img.src = './assets/media/menu.svg';
+        img.src = '../assets/media/nav/menu.svg';
     }
 });
