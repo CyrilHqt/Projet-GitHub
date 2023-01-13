@@ -12,3 +12,5 @@ Par exemple : feature/A1</p>
 
 <p>Les collaborateurs ne doivent pas push sur la main et travaillé uniquement sur leur branche qu'il crérons
 (git checkout -b "feature")</p>
+
+<P>Ils se doivent de "push" avant de "merge" leur branche sur la branche "dev" et au préalale prévenir chaque<br>colaborateur</P>
