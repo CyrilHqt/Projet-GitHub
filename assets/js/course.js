@@ -1,6 +1,7 @@
 const input = document.getElementById('addon')
 const add = document.getElementById('add')
 const supr = document.getElementById('delete')
+const out = document.getElementById('out')
 const list = document.getElementById('list')
 const number = document.getElementById('number')
 let product
@@ -14,6 +15,7 @@ input.addEventListener('change', function (){
 
 add.addEventListener('click', addToArray)
 supr.addEventListener('click', deleteOfArray)
+out.addEventListener('click', outArray)
 
 
 function affichage (){
@@ -45,5 +47,10 @@ function deleteOfArray(){
         let id = element.value
         products = products.filter((prod) => prod != id)
     })
+    affichage()
+}
+
+function outArray() {
+    products = []
     affichage()
 }
