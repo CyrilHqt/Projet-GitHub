@@ -4,12 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
-    <title>Courses</title>
+    <link rel="stylesheet" href="../assets/css/course.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Document</title>
 </head>
 <body>
-    
-<script src=""></script>
-
+<h1>Fait tes courses</h1>
+<span>L'app qui va super marché</span>
+<main>
+    <div>
+        <h2>Liste des produits</h2>
+        <div>
+            <label for="produit">Produit :</label>
+            <input type="text" id="addon" name="produit" placeholder="rentré votre produit">
+        </div>
+        <div>
+            <button type="button" id="add" name="add">Ajouter</button>
+            <button type="button" id="delete" name="delete">Supprimer</button>
+            <button type="button" id="sort" name="button">Trier</button>
+            <button type="button" id="out" name="button">Vider</button>
+        </div>
+        <div>
+            <p id="number"></p>
+            <ul id="list">
+            </ul>
+        </div>
+    </div>
+    <div>
+        <h2>J'oublie pas de :</h2>
+        <label for="comment">Commentaires : </label>
+        <textarea id="comment" placeholder="Ecrivez un commentaire pour vos course"></textarea>
+    </div>
+</main>
+<script src="../assets/js/course.js"></script>
 </body>
 </html>
