@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="../assets/css/imc.css">
     <title>IMC</title>
 </head>
 <body>
-
+<main>
     <h1>Calcul de l'IMC</h1>
     <p>Veuillez indiquez votre taille (cm) et votre poids (Kg) afin de calculer votre <strong>I</strong>ndice de <strong>M</strong>asse <strong>C</strong>orporel :</p>
 
@@ -17,13 +17,17 @@
         <input type="number" id="taille" max="300" min="50" placeholder="Taille">
         <label for="">Poids (Kg)</label>
         <input type="number" id="poids" max="500" min="1" placeholder="Poids">
-        <button id="calculeimc">Calculer l'IMC</button>
+        <button id="calcule_imc"><strong>Calculer l'IMC</strong></button>
     </form>
 
+<div class="resultat">
 <h2>Votre résultat</h2>
-<p id="">Votre imc est de </p>
-    
-<script src=""></script>
+<p id="imc">Votre imc est de <span></span></p>
+<P id="oms">Selon les résultat du calcule et selon l'<a href="https://www.who.int/fr" target="_blank">OMS</a> ( <strong>O</strong>rganisme <strong>M</strong>ondiale de la <strong>S</strong>anté) vous êtes en : <span></span></P>
+</div>
+
+</main>  
+<script src="../assets/js/imc.js"></script>
 
 </body>
 </html>
