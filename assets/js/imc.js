@@ -14,6 +14,7 @@ function check_input() {
             imc = imc.toFixed(1);
             console.log(imc);
             let libelle;
+            let articles;
             let classe;
             if (imc < 16) {
               libelle = 'Anorexie ou dénutrition';
@@ -27,6 +28,7 @@ function check_input() {
             } else if (imc <= 30) {
               libelle = 'Surpoids';
               classe = 'orange';
+              articles = 'Vois pourriez être intéressé par la lecture de cet article sur le NEAT https://fr.myprotein.com/thezone/entrainement/neat-perdre-du-poids-ameliorer-sa-forme/'
             } else if (imc <= 35) {
               libelle = 'Obésité modérée';
               classe = 'red';
@@ -41,6 +43,8 @@ function check_input() {
             document.querySelector("#oms span").textContent = libelle;
             document.querySelector("#oms span").className = classe;
             document.querySelector('.resultat').style.display = "block";
+            document.querySelector("#articles").textContent = articles;
+
           }            
 }
 let submiteBtn = document.getElementById('calcule_imc')

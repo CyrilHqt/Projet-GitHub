@@ -15,8 +15,13 @@
     --colorFive : #E76F51;
 }
 
+h2{
+    text-align: center;
+    margin: 30px 0;
+}
+
 body{
-    height: 100vh;
+    /* height: 100vh; */
     background-image: radial-gradient(circle at 85% 1%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 96%,transparent 96%, transparent 100%),radial-gradient(circle at 14% 15%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 1%,transparent 1%, transparent 100%),radial-gradient(circle at 60% 90%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 20%,transparent 20%, transparent 100%),radial-gradient(circle at 79% 7%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 78%,transparent 78%, transparent 100%),radial-gradient(circle at 55% 65%, hsla(190,0%,93%,0.05) 0%, hsla(190,0%,93%,0.05) 52%,transparent 52%, transparent 100%),linear-gradient(135deg, rgb(37, 56, 222),rgb(96, 189, 244));
     color: white;
 }
@@ -28,14 +33,14 @@ body{
     height: fit-content;
     border-radius: 10px;
     overflow: hidden;
-    margin: 100px auto;
+    margin: 50px auto;
 }
 
 /************* CONTAINER DOT ****************/
 
 /* we use this code when i create the js logic */
 
-/* .dot-group{
+.dot-group{
     margin: 150px auto;
     width: 200px;
     height: 20px;
@@ -77,7 +82,7 @@ body{
     100% {
       transform: translateY(0);
     }
-  } */
+  }
 
 /************ CONTAINER TOP *************/
 
@@ -86,9 +91,9 @@ h1{
     margin: 10px 0;
 } 
 
-/* .container .top{
+.container .top{
     display: none;
-} */
+}
 
 .container .card-img{
     width: 100px;
@@ -204,4 +209,116 @@ h1{
     }
 }
 
+/********** CONTAINER WEATHER CITY ********/
 
+.container-weather-city{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 20px
+}
+
+
+/************ WEATHER NY *********/
+
+.container-weather-ny{
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 50px auto;
+    background-color: white;
+    color: black;
+}
+
+.container-weather-ny .info-ny{
+    text-align: center;
+    margin: 20px 0;
+    font-size : 1.5rem;
+}
+.container-weather-ny .info-ny div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.container-weather-ny .info-ny div .degre-ny{
+    font-size : 2.2rem;
+}
+.container-weather-ny .info-ny div .localisation-ny{
+    font-size : 1.7rem
+}
+.container-weather-ny .info-ny p,
+.container-weather-ny .info-ny p .feft-ny{
+    font-size: 1.2rem;
+}
+/************ WEATHER LONDON *********/
+
+.container-weather-london{
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 50px auto;
+    background-color: white;
+    color: black;
+}
+
+.container-weather-london .info-london{
+    text-align: center;
+    margin: 20px 0;
+    font-size : 1.5rem;
+}
+.container-weather-london .info-london div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.container-weather-london .info-london div .degre-london{
+    font-size : 2.2rem;
+}
+.container-weather-london .info-london div .localisation-london{
+    font-size : 1.7rem
+}
+.container-weather-london .info-london p,
+.container-weather-london .info-london p .feft-ny{
+    font-size: 1.2rem;
+}
+
+/************ WEATHER LONDON *********/
+
+.container-weather-pekin{
+    width: 100%;
+    height: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 50px auto;
+    background-color: white;
+    color: black;
+}
+
+.container-weather-pekin .info-pekin{
+    text-align: center;
+    margin: 20px 0;
+    font-size : 1.5rem;
+}
+.container-weather-pekin .info-pekin div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.container-weather-pekin .info-pekin div .degre-pekin{
+    font-size : 2.2rem;
+}
+.container-weather-pekin .info-pekin div .localisation-pekin{
+    font-size : 1.7rem
+}
+.container-weather-pekin .info-pekin p,
+.container-weather-pekin .info-pekin p .feft-pekin{
+    font-size: 1.2rem;
+}

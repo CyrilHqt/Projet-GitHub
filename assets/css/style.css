@@ -1,0 +1,14 @@
+main{
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.card-div{
+    display: flex;
+    justify-content: center;
+}
+
+.img-card{
+    width: 20em;
+    margin: 1em;
+}
