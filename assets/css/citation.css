@@ -24,6 +24,7 @@ body{
     font-style: italic;
     font-size: 1.4em;
     margin-bottom: 0.1em;
+    margin-top: 1em;
 }
 
 #citation{
@@ -45,6 +46,7 @@ figcaption{
     background-color: var(--orange-clair);
     color: #fff;
     border-radius: 5px;
+    margin-bottom: 1em;
 }
 
 nav{

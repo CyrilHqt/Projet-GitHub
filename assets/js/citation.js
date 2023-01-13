@@ -1,6 +1,4 @@
-function generateCitation()
-{
-  let citations = [
+const citations = [
     ["La vie est un mystère qu'il faut vivre, et non un problème à résoudre.", "Gandhi"],
     ["Le plus grand risque est de ne prendre aucun risque.", "Mark Zuckerberg"],
     ["Méritez votre statut de leader chaque jour.", "Mickael Jordan"],
@@ -46,6 +44,8 @@ function generateCitation()
     ["Moi je n'ai confiance qu'en mon manche et ma parole... l'une est de fer et l'autre d'acier !", "Tony Montana"],
   ];
 
+function generateCitation()
+{
   if( document.contains( document.getElementById( 'citation' ) ) )
   {
     document.getElementById( 'citation' ).remove();
@@ -53,7 +53,7 @@ function generateCitation()
 
   let random = Math.floor( Math.random() * ( ( citations.length - 1 ) - 0 ) + 0 );
   let element = citations[ random ][ 0 ];
-  let autor = citations[ random ][ 1 ];
+  let author = citations[ random ][ 1 ];
   let bloc = document.getElementById( 'gen-citation' );
   let generate = document.createElement( 'blockquote' );
   let p = document.createElement( 'p' );
@@ -63,7 +63,31 @@ function generateCitation()
   generate.setAttribute( 'id', 'citation' );
   p.appendChild( content );
   generate.appendChild( p );
-  figcaption.appendChild( document.createTextNode( ' — ' + autor ) );
+  figcaption.appendChild( document.createTextNode( ' — ' + author ) );
   generate.appendChild( figcaption );
   bloc.appendChild( generate, bloc.firstChild );
+}
+
+function search()
+{
+    let input = document.getElementById( 'filtre' ).value;
+    let ul = document.createElement( 'ul' );
+        ul.setAttribute( 'id', 'liste' );
+    let btn = document.getElementById( 'btn-filter' );
+    
+    if( document.contains( document.getElementById( 'liste' ) ) )
+    {
+        document.getElementById( 'liste' ).remove();
+    }
+
+    for (let i = 0; i < citations.length; i++) {
+        let li = document.createElement( 'li' );
+
+        if ( citations[i][0].toLowerCase().includes( input.toLowerCase() ) || citations[i][1].toLowerCase().includes( input.toLowerCase() ) ) {
+            li.appendChild( document.createTextNode( citations[ i ][ 0 ] ) );
+            ul.appendChild( li );
+        }
+    }
+
+    btn.after( ul );
 }

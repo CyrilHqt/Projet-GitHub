@@ -27,9 +27,18 @@
         </div>
     </nav>
 
-    <citation id="gen-citation">
-        <button onclick="generateCitation()" class="btn-citation">Générer citation</button>
-    </citation>
+    <main>
+        <citation id="gen-citation">
+            <button onclick="generateCitation()" class="btn-citation">Générer citation</button>
+        </citation>
+        
+        <filtre>
+            <input type="text" id="filtre">
+            <button onclick="search()" id="btn-filter">Filtrer</button>
+        </filtre>
+    </main>
+
+
 
     <script src="../assets/js/nav.js"></script>
     <script src="../assets/js/citation.js"></script>
