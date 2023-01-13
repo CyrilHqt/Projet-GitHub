@@ -5,6 +5,7 @@ body{
 main{
     display: flex;
     width: 100%;
+    min-height: 70vh;
 }
 
 h1{
@@ -13,7 +14,7 @@ h1{
 }
 
 h2{
-    color: #2A908F;
+    color: white;
     font-size: 1.5em;
     margin-bottom: 0.5em;
 }
@@ -47,6 +48,7 @@ button{
     border: black 1px solid;
     border-radius: 10px;
     width: 50%;
+    background-color: #2a9d8f;
 }
 
 .parts li {
