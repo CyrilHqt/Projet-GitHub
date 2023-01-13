@@ -1,9 +1,9 @@
 <h2>Projet GitHub CESI</h2>
-<p>L'équipe se réparti les taches tel  que :
-A1 -> page d'accueil, les 4 collaborateurs la font mutuellement
-B2 -> Page de Météo, Par Yves
-C3 -> Page de liste de course, par Romain
-D4 -> Page du calcule de l'imc, par Cyril
+<p>L'équipe se réparti les taches tel  que :<br>
+A1 -> page d'accueil, les 4 collaborateurs la font mutuellement<br>
+B2 -> Page de Météo, Par Yves<br>
+C3 -> Page de liste de course, par Romain<br>
+D4 -> Page du calcule de l'imc, par Cyril<br>
 E5 -> Page des citations, par Julien
 </p>
 
